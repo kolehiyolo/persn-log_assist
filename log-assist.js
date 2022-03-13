@@ -41,10 +41,21 @@ let config = {
     },
 }
 
-config.changeColors = (array)=>{
+config.changeColors = (array) => {
     array.forEach(element => {
         config.colors[`${element[0]}`] = styles.text[`${element[1]}`];
     });
+}
+
+config.addFunc = (name,color) => {
+    config.colors[`${name}`] = styles.text[`${color}`];
+    loggers[`${name}`] = (log) =>{
+        if (config.allow) {
+            console.log(`${stamp(`${name}`)} ${log}`);
+        }
+    }
+
+    module.exports[`${name}`] = loggers[`${name}`];
 }
 
 
@@ -52,7 +63,7 @@ const stamp = (code) => {
     return `\x1b[${config.colors[`${code}`]}m${new Date().toISOString()}:\x1b[0m`;
 }
 
-const loggers = {
+let loggers = {
     ok: (log) => {
         if (config.allow) {
             console.log(`${stamp("ok")} ${log}`);
