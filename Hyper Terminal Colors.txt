@@ -1,0 +1,39 @@
+\x1b[0m Reset
+\x1b[1m Bright
+\x1b[2m Dim
+\x1b[3m Italics
+\x1b[4m Underscore
+\x1b[7m Reverse Colors
+\x1b[8m (hidden)
+\x1b[30m (black)
+\x1b[31m Color Red
+\x1b[32m Color Green
+\x1b[33m Color Yellow
+\x1b[34m Color Blue
+\x1b[35m Color Magenta
+\x1b[36m Color Cyan
+\x1b[37m Color White
+\x1b[90m Color Gray
+\x1b[91m Color Red
+\x1b[92m Color Green
+\x1b[93m Color Yellow
+\x1b[94m Color Blue
+\x1b[95m Color Magenta
+\x1b[96m Color Cyan
+\x1b[97m Color White
+\x1b[40m Bg Color Black
+\x1b[41m Bg Color Red
+\x1b[42m Bg Color Green
+\x1b[43m Bg Color Yellow
+\x1b[44m Bg Color Blue
+\x1b[45m Bg Color Magenta
+\x1b[46m Bg Color Cyan
+\x1b[47m Bg Color White
+\x1b[100m Bg Color Gray
+\x1b[101m Bg Color Red
+\x1b[102m Bg Color Green
+\x1b[103m Bg Color Yellow
+\x1b[104m Bg Color Blue
+\x1b[105m Bg Color Magenta
+\x1b[106m Bg Color Cyan
+\x1b[107m Bg Color White
