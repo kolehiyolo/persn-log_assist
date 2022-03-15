@@ -1,4 +1,4 @@
-# Kolehiyolo | Personal | Log Assist
+# Kolehiyolo | Personal | Log Assist (Ver. 1.4.0)
 Welcome! I am a hobby-coder and this is my "Log Assist" project, an NPM package that can be used as a better alternative than the traditional console-logging available w/ JavaScript. I find needing better logging especially for tracking errors, events, and for checking delays in server-related tasks.
 
 ## Table of Contents
