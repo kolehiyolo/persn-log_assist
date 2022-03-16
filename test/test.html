@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+
+        #form,
+        #form--msg {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #form--bot {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="../client/client.js"></script>
+    <form id="form">
+        <label id="form--msg" for="msg">
+            Message
+            <input id="form--msg--input" name="msg" type="text">
+        </label>
+        <div id="form--bot">
+            <select name="log-type" id="form--bot--type">
+                <option value="ok">ok</option>
+                <option value="error">error</option>
+                <option value="warn">warn</option>
+                <option value="server">server</option>
+                <option value="route">route</option>
+                <option value="endRoute">endRoute</option>
+            </select>
+            <button type="button" id="form--bot--test" onclick="test()">
+                Test
+            </button>
+        </div>
+    </form>
+    <script>
+        function test() {
+            let testType = document.getElementById("form--bot--type").value;
+            let testMsg = document.getElementById("form--msg--input").value;
+            log[`${testType}`](testMsg);
+        }
+    </script>
+</body>
+
+</html>
